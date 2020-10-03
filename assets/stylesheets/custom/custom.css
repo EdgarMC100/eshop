@@ -7,18 +7,23 @@ html{
     grid-template-columns: 15% 85%;
 }
 
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 /* HEADER */
 .container-header{
-    background: linear-gradient(to left, #023552 1%, #013651 100%);
+    
 }
 header{
-    
     /* padding:1em; */
     /* min-height: 100vh; */
     width: 15%;
     height: 100%;
     overflow: hidden;
     position: fixed;
+    background: linear-gradient(to left, #023552 1%, #013651 100%);
 }
 
 
@@ -51,6 +56,7 @@ header .menu {
 }
 header .menu a{
     font-size: 1em;
+    font-weight: 500;
     width: 100%;
     height: 15px;
     text-decoration: none;
@@ -61,7 +67,7 @@ header .menu a{
 }
 
 header .menu a:hover{
-    background-color: #fed161;
+    background-color: #ddb550;
 }
 
 /* Main */
@@ -70,7 +76,76 @@ section.main{
     overflow: hidden;
 }
 
-section.main .container{
-    max-width: 90%;
-    margin:0 auto;
+
+section.main .fixed-top{
+    height: 51px;
+    position:fixed;
+    top:0;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(221, 215, 215);
+    background:whitesmoke;
+    z-index: 99;
+}
+
+
+section.main .fixed-top .options{
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+section.main .fixed-top .options input.search{
+    border-style: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline-style: none;
+    padding:5px;
+}
+
+section.main .fixed-top .options button.sort{
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #023552;
+    outline-style: none;
+    padding: 3.5px;
+}
+
+section.main .container {
+    margin-top: 70px;
+}
+
+section.main table thead{
+    width: 900px;
+    position: fixed;
+    background-color: white;
+    z-index: 99;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+section.main table .t-head th{
+    color: #013551;
+    padding-left:65px;
+    padding-top: 20px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+section.main table .t-head th a{
+    padding-left: 20px;
+}
+section.main .t-body {
+    top:109px;
+    position: absolute;
+    /* bottom: -29px; */
+    bottom: -570px;
+    padding-top: 20px;
+    height: 0px;
+}
+
+section.main .t-body tr td{
+    text-align: left;
+    padding-left:45px;
+    border-bottom: 1px solid gainsboro;
+    /* border-right: 1px solid black; */
 }
