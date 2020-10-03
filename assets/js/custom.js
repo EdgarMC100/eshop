@@ -30,7 +30,6 @@ async function getOrders(endpoint) {
 
     return response.json();
 }
-
 function generateStaticOrders(){
     while(tbody.hasChildNodes()){
         console.log(tbody.removeChild(tbody.childNodes[0]));
@@ -139,7 +138,6 @@ function customizeOrders(orders){
     });
     return objectArrayCustomized;
 }
-
 
 function fillListJs(endpoint) {
     let values = [

@@ -13,9 +13,6 @@ html{
 }
 
 /* HEADER */
-.container-header{
-    
-}
 header{
     /* padding:1em; */
     /* min-height: 100vh; */
@@ -145,7 +142,8 @@ section.main .t-body {
 
 section.main .t-body tr td{
     text-align: left;
-    padding-left:45px;
+    padding-left:60px;
+    padding-right:60px;
     border-bottom: 1px solid gainsboro;
     /* border-right: 1px solid black; */
 }
